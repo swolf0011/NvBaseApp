@@ -1,19 +1,7 @@
-package com.abcnv.nvone.lib_base.adapter
+package com.abcnv.nvone.lib_base.adapter2
 
-import android.util.SparseArray
-import android.view.View
-import androidx.recyclerview.widget.RecyclerView
 
-/**
- * @Description:
- *
- * @Use:{非必须}
- *
- * @property:
- *
- * @Author liuyi
- */
-class NvViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+class NvViewHolderCallback(itemView: View) : RecyclerView.ViewHolder(itemView) {
     private val mViews = SparseArray<View>()
 
     /**
@@ -29,6 +17,4 @@ class NvViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         }
         return view as T
     }
-
-
 }
